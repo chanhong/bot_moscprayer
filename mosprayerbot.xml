@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="4.5.1" type="mambot" group="content">
+  <name>MosPrayerBot</name>
+  <creationDate>05/02/2010</creationDate>
+  <author>Chanh Ong</author>
+  <copyright>(C) 2003-2013 Chanh Ong</copyright>
+  <license>http://ongetc.com/gpl.html GNU/GPL</license>
+  <authorEmail>chanh.ong@gmail.com</authorEmail>
+  <authorUrl>OngETC.com</authorUrl>
+  <version>2.0.8</version>
+  <description><![CDATA[Show MosPrayer link on any content which is not in the exclude list
+ <p />(see MosPrayer readme.txt for more detail)
+ <p />Support COAddOns in making a small donation!
+ <p /><a href="https://www.paypal.com/xclick/business=chanh.ong@gmail.com&item_name=Donation+for+MosPrayer&no_shipping=1&tax=0&currency_code=USD" target="_blank">
+<img src="https://www.paypal.com/en_US/i/btn/x-click-butcc-donate.gif" alt="Pay with PayPal - It's fast, free and save!" border="0"></a>
+]]>
+  </description>
+  	<files>
+		<filename mambot="mosprayerbot">mosprayerbot.php</filename>
+	</files>
+	<params>
+		<param name="where" type="list" default="onPrepareContent" label="Where" description="Select where the MosPrayer link will be displayed">
+			<option value="onPrepareContent">ReadMore (Before)</option>
+			<option value="onAfterDisplayContent">ReadMore (After)</option>
+			<option value="onBeforeDisplayContent">After Title</option>
+			<option value="onAfterDisplayTitle">After Title (full content only)</option>
+	</param>
+	<param name="showonfp" type="list" default="1" label="Show Prayer Link on Front Page" description="Off: don't show prayer link on frontpage, On: do show prayer request link on frontpage">
+			<option value="0">Off</option>
+			<option value="1">On</option>
+	</param>
+
+  	</params>
+</mosinstall>
